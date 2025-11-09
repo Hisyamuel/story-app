@@ -1,13 +1,11 @@
 {
   "name": "story-apps",
   "version": "1.0.0",
-  "homepage": "https://Hisyamuel.github.io/story-apps",
   "description": "",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start-dev": "webpack serve --config webpack.dev.js",
-    "serve": "http-server dist",
-    "deploy": "npm run build && gh-pages -d dist"
+    "serve": "http-server docs"
   },
   "keywords": [],
   "author": "YOUR_NAME <yourmail@mail.com>",
