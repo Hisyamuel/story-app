@@ -431,7 +431,7 @@ footer {
     padding: 1rem 1rem;
     flex-direction: column;
     gap: 10px;
-    width: 50%;
+    width: 80%;
   }
 
   .app-bar__nav ul {
