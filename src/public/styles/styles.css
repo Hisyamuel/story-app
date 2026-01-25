@@ -427,11 +427,18 @@ footer {
     padding: 15px;
   }
 
+  header {
+    width: 100%;
+    margin-left: 2rem;
+  }
+
   .app-bar {
-    padding: 1rem 1rem 1rem 4rem;
+    padding: 1rem 2rem 1rem 2rem;
     flex-direction: column;
     gap: 10px;
     width: 90%;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .app-bar__nav ul {

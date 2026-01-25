@@ -22,7 +22,7 @@ class AppBar extends HTMLElement {
             
             <li><a href="#/about">About</a></li>
             ${isLoggedIn ? `
-              <li><a href="#/add-story">Add Story</a></li>
+              <li><a href="#/add-story">Add</a></li>
               <li><a href="#/login" id="logout-button">Logout</a></li>
             ` : `
               <li><a href="#/login">Login</a></li>
