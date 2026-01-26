@@ -51,12 +51,9 @@ const NotificationHelper = {
         endpoint: subscriptionJson.endpoint,
         keys: subscriptionJson.keys,
       };
-      console.log('Berhasil subscribe (payload bersih):', JSON.stringify(subscriptionPayload));
 
       // Mengirim payload yang sudah bersih ke server
       await ApiService.subscribePush(subscriptionPayload);
-
-      console.log('Berhasil subscribe:', JSON.stringify(subscription));
 
       // Mengirim data subscription ke server API
       console.log('Berhasil mengirim subscription ke server.');

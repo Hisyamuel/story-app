@@ -431,7 +431,7 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: navy;
-  color: var(--text-color-light);
+  color: rgba(0, 0, 128, 0.725);
   width: 100%;
   margin-top: 2rem;
 }
