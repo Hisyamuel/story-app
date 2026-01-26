@@ -148,8 +148,12 @@ footer.foot {
   align-items: center;
   background-color: var(--bg-light);
   padding: 1rem 2rem;
-  box-shadow: 0 18px 20px var(--secondary-color);
+  box-shadow: 0 6px 8px var(--text-color-dark);
   gap: 20px;
+}
+
+app-bar {
+  box-shadow: 0 6px 8px var(--secondary-color);
 }
 
 /* Container untuk Logo & Hamburger */
