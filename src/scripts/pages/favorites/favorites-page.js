@@ -1,5 +1,6 @@
 import FavoriteStoryDb from '../../utils/idb-helper';
 import Utils from '../../utils/index';
+import notification from '../../utils/toast-notification';
 
 const FavoritesPage = {
   async render() {
@@ -72,7 +73,7 @@ const FavoritesPage = {
 
         await FavoriteStoryDb.deleteStory(storyId);
 
-        alert('Cerita dihapus dari favorit.');
+        notification.showToast('Cerita dihapus dari favorit.', "info");
         this.afterRender();
       });
     });

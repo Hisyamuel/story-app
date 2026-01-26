@@ -2,6 +2,7 @@ import ApiService from '../../data/api';
 import AuthService from '../../utils/auth-service';
 import Utils from '../../utils/index';
 import FavoriteStoryDb from '../../utils/idb-helper';
+import notification from '../../utils/toast-notification';
 
 const HomePage = {
   async render() {
@@ -112,7 +113,7 @@ const HomePage = {
 
         if (storyData) {
           await FavoriteStoryDb.putStory(storyData);
-          alert(`'${storyData.name}' berhasil disimpan ke favorit!`);
+          notification.showToast(`'${storyData.name}' berhasil disimpan ke favorit!`, "success");
         } else {
           console.error('Data cerita tidak ditemukan untuk ID:', storyId);
         }
