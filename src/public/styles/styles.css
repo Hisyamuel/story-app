@@ -149,11 +149,12 @@ footer.foot {
   background-color: var(--bg-light);
   padding: 1rem 2rem;
   box-shadow: 0 6px 8px var(--text-color-dark);
+  border-radius: 16px;
   gap: 20px;
 }
 
 app-bar {
-  box-shadow: 0 8px 10px var(--secondary-color);
+  box-shadow: 0 4px 6px var(--secondary-color);
 }
 
 /* Container untuk Logo & Hamburger */
