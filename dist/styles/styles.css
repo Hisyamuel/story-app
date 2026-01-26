@@ -157,6 +157,10 @@ app-bar {
   border-radius: 16px;
 }
 
+app-bar>.app-bar {
+  border-radius: 16px;
+}
+
 /* Container untuk Logo & Hamburger */
 .app-bar__brand {
   display: flex;
