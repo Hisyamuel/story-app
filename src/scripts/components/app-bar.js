@@ -13,7 +13,7 @@ class AppBar extends HTMLElement {
       <nav class="app-bar">
         <div class="app-bar__brand">
           <a href="#/home" class="app-bar__logo">
-            <img src="/images/logo.jpg" alt="Story App Logo" height="40">
+            <img src="/images/logo.png" alt="Story App Logo" height="40">
           </a>
         </div>
         
