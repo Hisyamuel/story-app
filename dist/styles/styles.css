@@ -153,7 +153,7 @@ footer.foot {
 }
 
 app-bar {
-  box-shadow: 0 6px 8px var(--secondary-color);
+  box-shadow: 0 8px 10px var(--secondary-color);
 }
 
 /* Container untuk Logo & Hamburger */
@@ -446,6 +446,10 @@ footer {
     background-color: var(--bg-light); 
     z-index: 1000;
     gap: 20px;
+  }
+
+  app-bar {
+    box-shadow: none;
   }
 
   .app-bar__brand {
