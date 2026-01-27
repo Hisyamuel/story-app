@@ -450,7 +450,7 @@ footer {
     position: relative;
     background-color: var(--bg-light); 
     z-index: 1000;
-    gap: 15px;
+    gap: 10px;
   }
 
   app-bar {
