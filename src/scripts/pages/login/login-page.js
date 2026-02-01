@@ -8,7 +8,7 @@ const LoginPage = {
   async render() {
     return `
       <div class="auth-container">
-        <h1>Login Akun</h1>
+        <h1>Login</h1>
         <form id="login-form">
           <div class="form-group">
             <label for="email">Email</label>

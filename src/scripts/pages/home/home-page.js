@@ -15,7 +15,7 @@ const HomePage = {
           </div>
         </div>
         <div class="map-container">
-          <h2>Stories Location</h2>
+          <h2>Location</h2>
           <div id="map"></div>
         </div>
       </section>
@@ -67,7 +67,7 @@ const HomePage = {
               <p class="story-item__description">${story.description.substring(0, 100)}...</p>
               
               <button class="btn favorite-btn" data-id="${story.id}">
-                Simpan ke Favorit
+                Simpan Cerita
               </button>
             </div>
           `;
@@ -113,7 +113,7 @@ const HomePage = {
 
         if (storyData) {
           await FavoriteStoryDb.putStory(storyData);
-          notification.showToast(`'${storyData.name}' berhasil disimpan ke favorit!`, "success");
+          notification.showToast(`'${storyData.name}' berhasil disimpan!`, "success");
         } else {
           console.error('Data cerita tidak ditemukan untuk ID:', storyId);
         }

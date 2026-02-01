@@ -5,7 +5,7 @@ const AboutPage = {
       <section class="about-container">
         <h1>About</h1>
         <p>
-          Story App adalah platform berbagi cerita inovatif di mana pengguna dapat memposting cerita pendek mereka dan menandai lokasi di peta. 
+          WhereStory adalah platform berbagi cerita inovatif di mana pengguna dapat memposting cerita pendek mereka dan menandai lokasi di peta. 
           Aplikasi ini dibuat sebagai contoh penerapan arsitektur Single-Page Application (SPA), integrasi API, visualisasi peta dengan Leaflet, dan 
           prinsip-prinsip aksesibilitas web.
         </p> 

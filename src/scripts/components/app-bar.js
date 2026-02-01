@@ -13,7 +13,7 @@ class AppBar extends HTMLElement {
       <nav class="app-bar">
         <div class="app-bar__brand">
           <a href="#/home" class="app-bar__logo">
-            <img src="/images/logo.png" alt="Story App Logo" height="40">
+            <img src="/images/logo.png" alt="WhereStory Logo" height="40">
           </a>
         </div>
         
@@ -25,7 +25,7 @@ class AppBar extends HTMLElement {
           <ul>
             <li><a href="#/home">Home</a></li>
             ${isLoggedIn ? `
-              <li><a href="#/favorites">Favorites</a></li>
+              <li><a href="#/favorites">Saved</a></li>
               <li><a href="#/about">About</a></li>
               <li><a href="#/add-story">Add</a></li>
               <li><a href="#/login" id="logout-button">Logout</a></li>

@@ -6,15 +6,15 @@ const FavoritesPage = {
   async render() {
     return `
       <section class="favorites-container">
-        <h1>Cerita Favorit Anda</h1>
+        <h1>Cerita Tersimpan</h1>
         
         <div class="search-container form-group">
-          <label for="search-favorite">Cari Favorit</label>
+          <label for="search-favorite">Cari Daftar Cerita Tersimpan</label>
           <input type="search" id="search-favorite" class="form-control" placeholder="Ketik nama...">
         </div>
         
         <div id="favorite-list" class="story-list">
-          <p>Memuat cerita favorit...</p>
+          <p>Memuat cerita tersimpan...</p>
         </div>
       </section>
     `;
@@ -39,7 +39,7 @@ const FavoritesPage = {
     listContainer.innerHTML = '';
 
     if (stories.length === 0) {
-      listContainer.innerHTML = '<p>Anda belum memiliki cerita favorit.</p>';
+      listContainer.innerHTML = '<p>Anda belum memiliki cerita yang tersimpan.</p>';
       return;
     }
 
@@ -54,7 +54,7 @@ const FavoritesPage = {
           <p class="story-item__description">${story.description.substring(0, 100)}...</p>
           
           <button class="btn btn-danger delete-favorite-btn" data-id="${story.id}">
-            Hapus Favorit
+            Hapus Cerita
           </button>
         </div>
       `;
@@ -73,7 +73,7 @@ const FavoritesPage = {
 
         await FavoriteStoryDb.deleteStory(storyId);
 
-        notification.showToast('Cerita dihapus dari favorit.', "info");
+        notification.showToast('Cerita dihapus dari tersimpan.', "info");
         this.afterRender();
       });
     });
