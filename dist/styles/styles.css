@@ -221,7 +221,7 @@ app-bar>.app-bar {
 }
 
 .btn-primary:hover {
-  background-color: lightblue;
+  background-color: var(--secondary-color);
   transition: ease-in-out 0.3;
   color: var(--text-color-dark);
   border: var(--primary-color) solid 1px;
