@@ -1,6 +1,6 @@
 {
-  "name": "Story App PWA",
-  "short_name": "StoryApp",
+  "name": "WhereStory PWA",
+  "short_name": "WhereStory",
   "description": "Aplikasi berbagi cerita dengan fitur offline dan peta.",
   "start_url": "./index.html",
   "display": "standalone",
