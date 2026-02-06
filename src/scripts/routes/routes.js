@@ -1,3 +1,4 @@
+import LandingPage from '../pages/landing/landing-page.js';
 import HomePage from '../pages/home/home-page.js';
 import AboutPage from '../pages/about/about-page.js';
 import LoginPage from '../pages/login/login-page.js';
@@ -6,7 +7,7 @@ import AddStoryPage from '../pages/add-story/add-story-page.js';
 import FavoritesPage from '../pages/favorites/favorites-page.js';
 
 const routes = {
-  '/': HomePage,
+  '/': LandingPage,
   '/home': HomePage,
   '/about': AboutPage,
   '/login': LoginPage,

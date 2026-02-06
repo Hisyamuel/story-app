@@ -16,8 +16,15 @@ class App {
 
     const url = UrlParser.parseActiveUrlWithCombiner();
 
+    // Jika '/', kosongkan header. Jika bukan, tampilkan <app-bar>
+    if (url === '/') {
+      this._header.innerHTML = ''; // Sembunyikan App Bar di Landing Page
+    } else {
+      this._header.innerHTML = '<app-bar></app-bar>'; // Tampilkan di halaman lain
+    }
+
     // Auth Guards untuk melindungi rute tertentu
-    const protectedRoutes = ['/', '/home', '/add-story'];
+    const protectedRoutes = ['/home', '/add-story', '/favorites'];
     if (protectedRoutes.includes(url) && !AuthService.isLoggedIn()) {
       window.location.hash = '#/login';
       return;

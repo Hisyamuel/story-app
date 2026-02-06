@@ -46,7 +46,7 @@ class AppBar extends HTMLElement {
       logoutButton.addEventListener('click', (event) => {
         event.preventDefault();
         AuthService.removeToken();
-        window.location.hash = '#/login';
+        window.location.hash = '#/';
         this.render();
         this._addEventListeners();
       });
