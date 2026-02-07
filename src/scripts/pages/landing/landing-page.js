@@ -9,11 +9,14 @@ const LandingPage = {
             <p class="fade-in-up" style="animation-delay: 0.2s;">
               Temukan dan bagikan cerita dari berbagai lokasi di seluruh dunia.
             </p>
-            <a href="#/login" class="btn btn-primary fade-in-up">Mulai Sekarang</a>
+            <div class="cta-buttons fade-in-up" style="animation-delay: 0.4s;">
+              <a href="#/login" class="btn btn-primary fade-in-up">Mulai Sekarang</a>
+              <a href="#descript" class="btn btn-third fade-in-up">Ketahui Lebih Lanjut</a>
+            </div>
           </div>
         </section>
 
-        <section class="description-section">
+        <section id="descript" class="description-section">
           <div class="description-content">
             <h2 class="fade-in-up">Apa itu WhereStory?</h2>
             <p class="fade-in-up" style="animation-delay: 0.2s;">
