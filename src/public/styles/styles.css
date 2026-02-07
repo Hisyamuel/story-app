@@ -31,6 +31,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  backdrop-filter: blur(10px);
 }
 
 /* Container Utama */
@@ -150,6 +151,9 @@ footer.foot {
   padding: 1rem 2rem;
   box-shadow: 0 6px 8px var(--text-color-dark);
   gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;;
 }
 
 app-bar {
@@ -438,7 +442,7 @@ footer {
 
 /* Media Queries (Responsif) */
 
-/* --- MOBILE RESPONSIVE (HP) --- */
+/* MOBILE RESPONSIVE (HP) */
 @media (max-width: 480px) {
 
   .app-bar {
@@ -531,19 +535,6 @@ footer {
     padding-left: 5px;
   }
 }
-/*
-  .auth-container,
-  .add-story-container {
-    padding: 1.5rem;
-    margin: 1rem auto;
-  }
-
-  #map,
-  #add-map {
-    height: 300px;
-  }
-*/
-
 
 /* Tablet (768px) */
 @media (min-width: 768px) {
@@ -755,6 +746,7 @@ footer {
 
 .description-section {
   background-color: var(--bg-light);
+  backdrop-filter: blur(100px);
   border-radius: 16px;
   box-shadow: 0;
 }
