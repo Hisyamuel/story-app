@@ -789,11 +789,14 @@ footer {
 }
 
 .cta-buttons {
+  display: flex;
+  justify-content: center;
   margin-top: 2rem;
 }
 
 .cta-buttons .btn {
   margin: 0 10px;
+  padding: 12px 12px;
 }
 
 .cta-buttons .btn:hover {
