@@ -31,7 +31,9 @@
     "workbox-webpack-plugin": "^7.3.0"
   },
   "dependencies": {
+    "@tsparticles/engine": "^3.9.1",
     "idb": "^8.0.3",
-    "leaflet": "^1.9.4"
+    "leaflet": "^1.9.4",
+    "tsparticles": "^3.9.1"
   }
 }

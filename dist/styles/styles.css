@@ -11,6 +11,18 @@
   --danger-color: #D32F2F;
 }
 
+/* Animasi Background */
+#tsparticles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; 
+    pointer-events: none; 
+    background-color: var(--primary-color); 
+}
+
 /* Basic Reset dan Global Styles */
 * {
   margin: 0;
