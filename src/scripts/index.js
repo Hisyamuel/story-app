@@ -47,7 +47,7 @@ window.addEventListener('load', async () => {
               enable: true,
               width: 800, 
             },
-            value: 100,
+            value: 400,
           },
           opacity: {
             value: { min: 0.1, max: 0.8 },
