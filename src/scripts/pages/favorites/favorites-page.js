@@ -6,8 +6,11 @@ const FavoritesPage = {
   async render() {
     return `
       <section class="favorites-container">
-        <h1>Cerita Tersimpan</h1>
-        
+        <div class="favorites-header">
+          <i class="fas fa-solid fa-bookmark"></i>
+          <h1>Cerita Tersimpan</h1>
+        </div>
+
         <div class="search-container form-group">
           <label for="search-favorite">Cari Daftar Cerita Tersimpan</label>
           <input type="search" id="search-favorite" class="form-control" placeholder="Ketik nama...">

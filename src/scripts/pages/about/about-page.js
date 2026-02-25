@@ -16,10 +16,11 @@ const AboutPage = {
         <br>
         <h2>Features :</h2>
           <ul>
-          <br><li><strong>SPA:</strong> Navigasi cepat tanpa reload halaman.</li>
-          <br><li><strong>Peta Interaktif:</strong> Lihat lokasi cerita di seluruh dunia secara real-time.</li>
-          <br><li><strong>Tambah Cerita:</strong> Bagikan ceritamu dengan foto dan lokasi terkini.</li>
-          <br><li><strong>Responsif:</strong> Tampilan optimal di desktop, tablet, dan mobile.</li>
+            <br><li><strong>SPA:</strong> Navigasi cepat tanpa reload halaman.</li>
+            <br><li><strong>Peta Interaktif:</strong> Lihat lokasi cerita di seluruh dunia secara real-time.</li>
+            <br><li><strong>Tambah Cerita:</strong> Bagikan ceritamu dengan foto dan lokasi terkini.</li>
+            <br><li><strong>Simpan Cerita:</strong> Simpan cerita favoritmu untuk diakses kapan saja.</li>
+            <br><li><strong>Responsif:</strong> Tampilan optimal di desktop, tablet, dan mobile.</li>
           </ul>
       </section>
     `;

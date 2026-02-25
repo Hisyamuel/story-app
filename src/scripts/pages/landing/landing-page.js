@@ -9,9 +9,9 @@ const LandingPage = {
             <p class="fade-in-up" style="animation-delay: 0.2s;">
               Temukan dan bagikan cerita dari berbagai lokasi di seluruh dunia.
             </p>
-            <div class="cta-buttons fade-in-up" style="animation-delay: 0.4s;">
-              <a href="#/login" class="btn btn-primary fade-in-up">Mulai Sekarang</a>
-              <a href="#descript" class="btn btn-third fade-in-up">Ketahui Lebih Lanjut</a>
+            <div class="cta-buttons">
+              <a href="#/login" class="btn btn-primary">Mulai Sekarang</a>
+              <a href="#descript" class="btn btn-third">Ketahui Lebih Lanjut</a>
             </div>
           </div>
         </section>
@@ -40,8 +40,8 @@ const LandingPage = {
               <p>Unggah foto dan tulis ceritamu dengan mudah untuk dilihat oleh komunitas global.</p>
             </div>
             <div class="feature-card fade-in-up" style="animation-delay: 0.6s;">
-              <i class="fas fa-heart"></i>
-              <h3>Simpan Favorit</h3>
+              <i class="fas fa-solid fa-bookmark"></i>
+              <h3>Simpan Ceritamu</h3>
               <p>Simpan cerita-cerita yang paling Anda sukai untuk dibaca kembali kapan saja.</p>
             </div>
           </div>

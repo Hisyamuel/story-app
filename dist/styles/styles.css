@@ -378,6 +378,29 @@ a {
   line-height: 1.4;
 }
 
+/* Favorites Page */
+.favorites-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.favorites-header>h1 {
+  padding-top: 15px;
+}
+
+.favorites-header>i {
+  align-items: center;
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+}
+
+/* About Page */
+.about-container ul {
+  padding-left: 20px;
+}
+
 /* Halaman Login/Register */
 .auth-container {
   max-width: 450px;
@@ -838,4 +861,4 @@ footer {
   }
 }
 
-/* Landing Page Responsive */
+
