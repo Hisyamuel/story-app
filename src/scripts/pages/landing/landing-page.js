@@ -2,7 +2,7 @@ const LandingPage = {
   async render() {
     return `
       <div class="landing-container">
-        <section class="hero-section">
+        <section id="hero" class="hero-section">
           <div class="hero-content">
             <img src="/images/logo.png" class="logo fade-in-up" alt="WhereStory Logo" height="60">
             <h1 class="fade-in-up">WhereStory</h1>
@@ -26,7 +26,7 @@ const LandingPage = {
           </div>
         </section>
 
-        <section class="features-section">
+        <section id="features" class="features-section">
           <h2 class="text-center fade-in-up">Fitur Unggulan</h2>
           <div class="features-grid">
             <div class="feature-card fade-in-up" style="animation-delay: 0.2s;">
@@ -47,7 +47,7 @@ const LandingPage = {
           </div>
         </section>
 
-        <section class="cta-section">
+        <section id="option" class="cta-section">
           <div class="cta-content">
             <h2 class="fade-in-up">Siap Bergabung?</h2>
             <p class="fade-in-up" style="animation-delay: 0.2s;">
@@ -60,6 +60,45 @@ const LandingPage = {
           </div>
         </section>
       </div>
+      <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section about-col">
+                <div class="footer-logo">About</div>
+                <p>
+                    WhereStory adalah sebuah platform inovatif yang memungkinkan Anda untuk menjelajahi dunia melalui cerita. 
+                    Baik itu kenangan pribadi, fakta sejarah, atau pengamatan sederhana, WhereStory adalah tempat untuk membagikannya.
+                </p>
+            </div>
+
+            <div class="footer-section links-col">
+                <h3>Quick Nav</h3>
+                <ul>
+                  <li><a href="#hero">Home</a></li>
+                  <li><a href="#descript">Description</a></li>
+                  <li><a href="#features">Features</a></li>
+                  <li><a href="#option">Option</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section contact-col">
+                <h3>Contact Me</h3>
+                <div class="contact-row">
+                  <i class="ph ph-whatsapp-logo"></i>
+                  <a href="https://wa.me/+6282159103747" target="_blank">+62 821-5910-3747</a>
+                </div>
+                <div class="contact-row">
+                  <i class="ph ph-envelope"></i>
+                  <a href="mailto:hisyam4633@gmail.com" target="_blank">hisyam4633@gmail.com</a>
+                </div>
+                <div class="footer-socials">
+                  <a href="https://www.instagram.com/smhsymz" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+                  <a href="https://linkedin.com/in/nuramalihisyam" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
+                  <a href="https://www.github.com/Hisyamuel" target="_blank"><i class="ph ph-github-logo"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>Copyright © 2025 nuramalihisyam. All Rights Reserved.</p>
+      </footer>
     `;
   },
 
