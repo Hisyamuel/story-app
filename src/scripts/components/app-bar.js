@@ -18,7 +18,9 @@ class AppBar extends HTMLElement {
         </div>
         
         ${isLoggedIn ? `
-          <button id="hamburger" class="header__menu" aria-label="Navigation Menu">☰</button>
+          <button id="hamburger" class="header__menu" aria-label="Navigation Menu">
+            <i class="fas fa-bars"></i>
+          </button>
         ` : ''}
 
         <div id="navigationDrawer" class="app-bar__nav ${isLoggedIn ? 'user-logged-in' : ''}">
@@ -30,8 +32,8 @@ class AppBar extends HTMLElement {
               <li><a href="#/add-story">Add</a></li>
               <li><a href="#/login" id="logout-button">Logout</a></li>
             ` : `
-               <li><a href="#/about">About</a></li>
-               <li><a href="#/login">Login</a></li>
+              <li><a href="#/about">About</a></li>
+              <li><a href="#/login">Login</a></li>
             `}
           </ul>
         </div>
@@ -57,29 +59,29 @@ class AppBar extends HTMLElement {
     const navDrawer = this.querySelector('#navigationDrawer');
 
     if (hamburgerBtn && navDrawer) {
+      const setHamburgerIcon = (isOpen) => {
+        hamburgerBtn.innerHTML = isOpen
+          ? '<i class="fas fa-times"></i>'
+          : '<i class="fas fa-bars"></i>';
+      };
+
       hamburgerBtn.addEventListener('click', (event) => {
         event.stopPropagation();
         navDrawer.classList.toggle('open');
-        
-        // Logika Ganti Icon (☰ <-> X)
-        const isOpen = navDrawer.classList.contains('open');
-        hamburgerBtn.innerHTML = isOpen ? '<span style="font-size: 45px; line-height: 50px;">&times;</span>' : '&#9776;';
-        hamburgerBtn.style.color = isOpen ? '#ffd600' : 'var(secondary-color)';
+        setHamburgerIcon(navDrawer.classList.contains('open'));
       });
-      
+
       // Tutup saat klik menu
       navDrawer.addEventListener('click', () => {
         navDrawer.classList.remove('open');
-        hamburgerBtn.innerHTML = '&#9776;';
-        hamburgerBtn.style.color = 'var(--secondary-color)';
+        setHamburgerIcon(false);
       });
-      
+
       // Tutup saat klik luar
       document.addEventListener('click', (event) => {
         if (!hamburgerBtn.contains(event.target) && !navDrawer.contains(event.target)) {
-           navDrawer.classList.remove('open');
-           hamburgerBtn.innerHTML = '&#9776;';
-           hamburgerBtn.style.color = 'var(--secondary-color)';
+          navDrawer.classList.remove('open');
+          setHamburgerIcon(false);
         }
       });
     }
